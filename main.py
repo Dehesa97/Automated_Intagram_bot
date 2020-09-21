@@ -27,10 +27,10 @@ class InstaBot:
 
    
         element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.NAME, "username")))
-        element.send_keys("reconquesta18")
+        element.send_keys("*****")
 
         element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.NAME, "password")))
-        element.send_keys("estepona1912")
+        element.send_keys("*****")
         self.driver.find_element_by_id("loginForm").click()
         element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "react-root"))).click()
         time.sleep(2)
@@ -39,7 +39,4 @@ class InstaBot:
         self.driver.get('{}/{}'.format(self.base_url, 'fatcatharvey'))
         time.sleep(6)
         self.driver.find_element_by_css_selector('[alt= "Harvey ll\'s profile picture"]').click()
-
-        #element = self.driver.find_element_by_xpath('//div[@alt="Harvey ll\'s profile picture"]')
-        #element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "react-root"))).click()
         time.sleep(10)
