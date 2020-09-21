@@ -43,4 +43,3 @@ class InstaBot:
         #element = self.driver.find_element_by_xpath('//div[@alt="Harvey ll\'s profile picture"]')
         #element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "react-root"))).click()
         time.sleep(10)
-InstaBot('reconquesta18', 'Estepon@1912')
