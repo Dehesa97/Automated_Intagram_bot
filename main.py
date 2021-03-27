@@ -40,3 +40,4 @@ class InstaBot:
         time.sleep(6)
         self.driver.find_element_by_css_selector('[alt= "Harvey ll\'s profile picture"]').click()
         time.sleep(10)
+        print("oh no")
